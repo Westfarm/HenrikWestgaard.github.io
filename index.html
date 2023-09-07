@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="https://kit.fontawesome.com/c85636390b.js" crossorigin="anonymous"></script>
+        <style>
+            @font-face {
+                font-family: 'Sushi Sans';
+                src: url('Sushi Sans.otf') format('opentype');
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+           <div class="container">
+            <nav>
+                <img src="logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Education</a></li>
+                    <li> <a href="#">Work</a></li>
+                    <li> <a href="#">Interests</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>CV and portfolio for <span>Henrik Westgaard.</span> <br><br>I am a recent <span>Electrical Engineer</span> graduate <br> looking for work within my field of study<br>
+                and interest: Industrial automation,<br> data science, analytics and programming.    </h1>
+            </div>
+           </div> 
+        </div>
+    <!-----------about------------->    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm 31 years old from Drammen. I moved to Oslo in 2018 after spending a year abroad in Australia. In Australia I traveled throughout the southeast from melbourne and stregthened an already native level fluency in English and great communication skills. <br>
+                    I also speak Spanish at a B1 level and I frequently visit family in Barcelona. skriv mer om bachelor og studiet (valgfag osv), skriv om fadder, og resistance
+                    I am a very sociable person who
+                    I love working with personal projects and home automation</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>PLC</span><br>Structured text and function block diagram programming</li>
+                            <li><span>Python</span><br>Machine learning and neural networks, model training, image recognition, data cleaning</li>
+                            <li><span>Web development</span><br>Frontend programming in HTML, CSS and JS</li>
+                            <li><span>Microcontrollers</span><br>C# and C++ for for microcontrollers like Arduino and Raspberry pi</li>
+                            <li><span>PCB design</span><br>Electrical circuit design</li>
+                            <li><span>Robotstudio</span><br>Programming of robotics. Arms with multiple degrees of freedom, and larger interactive systems</li>
+                            <li><span>Excel</span><br>Data analytics and spreadsheeting</li>
+                            <li><span>AutoCAD and Blendr</span><br>Have experience with creating custom parts for engineering projects through 3D modeling, printing, and cnc laser cutting</li>
+                            <li><span>Photoshop</span><br>Photo and video editing. Digital art and design</li>
+                            <li><span>MatLab</span><br>Making </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Secretary at Åssiden Fysioterapi</span><br>Accounting, patient journals and timetables</li>
+                            <li><span>Storage and Logistics at Postnord</span><br>Storage worker and logistics</li>
+                            <li><span>Skillb</span><br>Test2</li>
+                            <li><span>Skillb</span><br>Test2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Skilla</span><br>Test1</li>
+                            <li><span>Skilla</span><br>Test1</li>
+                            <li><span>Skilla</span><br>Test1</li>
+                            <li><span>Skilla</span><br>Test1</li>
+                            <li><span>Skilla</span><br>Test1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+  <!--   ------------my projects---------------- -->
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">Some of my projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Service 1</h2>
+                <p>service 1 test</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Service 2</h2>
+                <p>service 2 test</p>
+                <a href="#">Learn more</a>
+            </div>
+          <!--   <div>
+                <i class="fas fa-code"></i>
+                <h2>Service 3</h2>
+                <p>service 3 test</p>
+                <a href="#">Learn more</a>
+            </div> -->
+        </div>
+    </div>
+  </div>
+  <!-- -----------portfolio--------------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio and interests</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="plc.png">
+                <div class="layer">
+                    <h3>Tekst1</h3>
+                    <p>forklaring på tekst 1</p>
+                    <a href="#"><!-- link til icon nettside --></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resistance.png">
+                <div class="layer">
+                    <h3>Tekst1</h3>
+                    <p>forklaring på tekst 1</p>
+                    <a href="#"><!-- link til icon nettside --></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="plc.png">
+                <div class="layer">
+                    <h3>Tekst1</h3>
+                    <p>forklaring på tekst 1</p>
+                    <a href="#"><!-- link til icon nettside --></a>
+                </div>
+            </div>
+                
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!----------------contact --------------->
+  
+  <div id="contact_me">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h4 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>Henrik_westgaard@hotmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+4799379085</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/henrik.westgaard"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/henrik-westgaard-696b4b134/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/kanyewestgaard/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="CV.pdf" download class="btn">Download CV</a>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+</html>
